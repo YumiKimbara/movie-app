@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Reservation</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bookMovie.css" />
+    <!-- font awsome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/bookMovie.js"></script>
+  </head>
+  <body>
+    <div id="all-content">
+      <div class="select-movie">
+        <p>Choose a movie</p>
+
+        <select name="movie" class="current-selected">
+          <!-- <option value="default">Please select the movie</option> -->
+          <option value="Movie1" id="Movie1">
+            Detective Conan The Scarlet Bullet ($5)
+          </option>
+          <option value="Movie2" id="Movie2">
+            EVANGELION:3.0+1.0 THRICE UPON A TIME($10)
+          </option>
+          <option value="Movie3" id="Movie3">The Lion King($15)</option>
+        </select>
+      </div>
+      <div class="seat-description">
+        <div class="icon-available">
+          <i class="fas fa-square"></i>
+          <span>Available</span>
+        </div>
+        <div class="icon-selected">
+          <i class="fas fa-user"></i>
+          <span>Selected</span>
+        </div>
+        <div class="icon-occupied">
+          <i class="fas fa-user"></i>
+          <span>Occupied</span>
+        </div>
+      </div>
+      <div class="screen"><p>screen</p></div>
+      <div class="all-seat">
+        <div class="seat-number">
+          <p>A</p>
+          <p>B</p>
+          <p>C</p>
+          <p>D</p>
+          <p>E</p>
+        </div>
+        <div class="left-seat">
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-user icon occupied"></i>
+          <i class="fas fa-user icon occupied"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+        </div>
+        <div class="center-seat">
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+        </div>
+        <div class="right-seat">
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+        </div>
+        <div class="seat-number">
+          <p>A</p>
+          <p>B</p>
+          <p>C</p>
+          <p>D</p>
+          <p>E</p>
+        </div>
+      </div>
+      <div class="all-seat">
+        <div class="seat-number">
+          <p>F</p>
+          <p>G</p>
+          <p>H</p>
+          <p>I</p>
+          <p>J</p>
+          <p>K</p>
+        </div>
+        <div class="left-seat">
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+        </div>
+        <div class="center-seat">
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-user icon occupied"></i>
+          <i class="fas fa-user icon occupied"></i>
+          <i class="fas fa-user icon occupied"></i>
+          <i class="fas fa-user icon occupied"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-user icon occupied"></i>
+          <i class="fas fa-user icon occupied"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+        </div>
+        <div class="right-seat">
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+          <i class="fas fa-square icon"></i>
+        </div>
+        <div class="seat-number">
+          <p>F</p>
+          <p>G</p>
+          <p>H</p>
+          <p>I</p>
+          <p>J</p>
+          <p>K</p>
+        </div>
+      </div>
+      <div class="reserved-seat">
+        <p>
+          You have selected <span class="total-seat">0</span> seats for a price
+          of $<span class="total-price">0</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
