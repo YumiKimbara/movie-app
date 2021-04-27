@@ -32,6 +32,15 @@ currentSelected.addEventListener("change", function () {
   }
 });
 
+const keepMovieInfo = () => {
+  if (localStorage.hasOwnProperty("selectedMovie")) {
+    //@@@localStorageのデータを使う時は一度下記のように変数にいれるようにする
+    let selectedMovie = localStorage.getItem("selectedMovie");
+    document.getElementById(selectedMovie).selected = "true";
+  }
+};
+keepMovieInfo();
+
 const increaseNum = () => {
   const checkCount = JSON.parse(localStorage.getItem("ticketInfo"));
   count = checkCount ? checkCount.count : 0;
