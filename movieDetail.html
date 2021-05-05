@@ -11,15 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <!-- font awsome -->
+    <!-- font awsome
     <link
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
-    />
-    <!-- Jquery -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    /> -->
     <!-- JS -->
-    <script defer src="js/home.js"></script>
+    <script defer src="js/movieDetail.js"></script>
   </head>
   <body>
     <nav>
@@ -27,14 +25,14 @@
         <li>See a Movie</li>
         <li>Search a theater</li>
         <li>Food & Drink</li>
-        <!-- <li><i class="fas fa-search search-btn"></i></li> -->
+        <li><i class="fas fa-search search-btn"></i></li>
       </ul>
       <div id="sb-search" class="sb-search">
         <form class="form">
           <input
             class="sb-search-input"
             onkeyup="buttonUp();"
-            placeholder="Search"
+            placeholder="Enter your search term..."
             type="search"
             value=""
             name="search"
@@ -47,17 +45,6 @@
       </div>
       <!-- <input type="text" placeholder="search movies" class="search-form" /> -->
     </nav>
-    <div class="slideshow">
-      <div class="slide1 slide"></div>
-      <div class="slide2 slide"></div>
-      <div class="slide3 slide"></div>
-      <i class="fas fa-chevron-left left-btn"></i>
-      <i class="fas fa-chevron-right right-btn"></i>
-      <div class="dots"></div>
-    </div>
-    <div class="movie-info-wrapper">
-      <h2 class="sub-title">Featured movies</h2>
-      <div class="movies-info"></div>
-    </div>
+    <div class="movie-detail"></div>
   </body>
 </html>

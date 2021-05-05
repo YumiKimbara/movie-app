@@ -32,6 +32,15 @@ currentSelected.addEventListener("change", function () {
   }
 });
 
+const keepMovieInfo = () => {
+  if (localStorage.hasOwnProperty("selectedMovie")) {
+    //@@@localStorageのデータを使う時は一度下記のように変数にいれるようにする
+    let selectedMovie = localStorage.getItem("selectedMovie");
+    document.getElementById(selectedMovie).selected = "true";
+  }
+};
+keepMovieInfo();
+
 const increaseNum = () => {
   const checkCount = JSON.parse(localStorage.getItem("ticketInfo"));
   count = checkCount ? checkCount.count : 0;
@@ -117,7 +126,6 @@ seatNum.forEach((i) => {
   Allseats[i].classList.add("selected");
 });
 
-//@@@localStorageのデータを使う時は一度下記のように変数にいれるようにする
 //@@@上記のadEventListenner(change)の中で下記の関数を実行すると、
 //リロードするたびにまたchangeが発生しないと関数が呼ばれない。
 //その為、ローカルストレージに保存してもリロードのたびに消えてしまう

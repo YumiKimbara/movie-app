@@ -1,9 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background-color: black; }
-
 #all-content {
   width: 80%;
   margin: 0 auto;
@@ -14,21 +8,21 @@ body {
 .select-movie {
   display: flex;
   justify-content: center;
-  margin: 2rem; }
+  margin: 1.6rem; }
   .select-movie p {
-    margin-right: 0.5rem; }
+    margin-right: 1rem; }
   .select-movie select {
-    margin-left: 0.5rem; }
+    margin-left: 1rem; }
 
 .seat-description {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 1.6rem; }
 
 .screen {
   clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
   background-color: white;
-  height: 4rem;
+  height: 3.8rem;
   width: 50%;
   margin: 0 auto; }
   .screen p {
@@ -38,7 +32,7 @@ body {
 .seat-number {
   display: flex;
   flex-direction: column;
-  font-size: 1rem; }
+  font-size: 1.6rem; }
 
 .all-seat {
   display: flex;
@@ -47,51 +41,54 @@ body {
 .left-seat {
   display: flex;
   flex-wrap: wrap;
-  width: 6rem;
+  width: 9rem;
   margin: 1rem; }
 
 .right-seat {
   display: flex;
   flex-wrap: wrap;
-  width: 6rem;
+  width: 9rem;
   margin: 1rem; }
 
 .center-seat {
   display: flex;
-  width: 14rem;
   flex-wrap: wrap;
+  width: 24rem;
   margin: 1rem; }
 
 .icon {
-  padding: 0.3rem;
+  padding: 1rem;
   cursor: pointer;
-  font-size: 1.7rem; }
+  font-size: 2.2rem; }
 
 .occupied {
   color: #adb5bd; }
 
 .icon-available {
-  font-size: 1rem;
-  padding: 0 1rem; }
+  font-size: 1.6rem;
+  padding: 0 2.2rem; }
 
 .icon-selected {
-  font-size: 1rem;
-  padding: 0 1rem; }
+  font-size: 1.6rem;
+  padding: 0 2.2rem; }
   .icon-selected i {
-    color: salmon; }
+    color: #d90368; }
 
 .icon-occupied {
-  font-size: 1rem;
-  padding: 0 1rem; }
+  font-size: 1.6rem;
+  padding: 0 2.2rem; }
   .icon-occupied i {
     color: #adb5bd; }
 
 .reserved-seat {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2.2rem; }
 
 .selected {
-  color: salmon; }
+  color: #d90368; }
 
 .fa-user.selected {
-  color: salmon; }
+  color: #d90368; }

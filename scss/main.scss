@@ -1,0 +1,21 @@
+@import "variable";
+@import "home";
+@import "bookMovie";
+@import "movieDetail";
+@import "searchForm";
+
+html {
+  //convert rem to px. exapmle) 16 * 0.625 = 10
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: $mainFont;
+  background-color: #000000;
+  p {
+    font-size: $m-size;
+  }
+}

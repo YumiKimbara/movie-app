@@ -1,10 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background-color: black;
-}
-
+@import "variable";
 #all-content {
   width: 80%;
   margin: 0 auto;
@@ -16,29 +10,29 @@ body {
 .select-movie {
   display: flex;
   justify-content: center;
-  margin: 2rem;
+  margin: $m-size;
   p {
-    margin-right: 0.5rem;
+    margin-right: $s-size;
   }
   select {
-    margin-left: 0.5rem;
+    margin-left: $s-size;
   }
 }
 
 .seat-description {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: $m-size;
 }
 
 .screen {
   clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
-  background-color: white;
-  height: 4rem;
+  background-color: $white;
+  height: $xl-size;
   width: 50%;
   margin: 0 auto;
   p {
-    color: #484848;
+    color: $darkgray;
     text-align: center;
   }
 }
@@ -46,7 +40,7 @@ body {
 .seat-number {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: $m-size;
 }
 
 .all-seat {
@@ -57,64 +51,67 @@ body {
 .left-seat {
   display: flex;
   flex-wrap: wrap;
-  width: 6rem;
+  width: 9rem;
   margin: 1rem;
 }
 
 .right-seat {
   display: flex;
   flex-wrap: wrap;
-  width: 6rem;
+  width: 9rem;
   margin: 1rem;
 }
 
 .center-seat {
   display: flex;
-  width: 14rem;
   flex-wrap: wrap;
+  width: 24rem;
   margin: 1rem;
 }
 
 .icon {
-  padding: 0.3rem;
+  padding: $s-size;
   cursor: pointer;
-  font-size: 1.7rem;
+  font-size: $l-size;
 }
 
 .occupied {
-  color: #adb5bd;
+  color: $lightgray;
 }
 
 .icon-available {
-  font-size: 1rem;
-  padding: 0 1rem;
+  font-size: $m-size;
+  padding: 0 $l-size;
 }
 
 .icon-selected {
-  font-size: 1rem;
-  padding: 0 1rem;
+  font-size: $m-size;
+  padding: 0 $l-size;
   i {
-    color: salmon;
+    color: $pink;
   }
 }
 
 .icon-occupied {
-  font-size: 1rem;
-  padding: 0 1rem;
+  font-size: $m-size;
+  padding: 0 $l-size;
   i {
-    color: #adb5bd;
+    color: $lightgray;
   }
 }
 
 .reserved-seat {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: $l-size;
 }
 
 .selected {
-  color: salmon;
+  color: $pink;
 }
 
 .fa-user.selected {
-  color: salmon;
+  color: $pink;
 }
